@@ -1,22 +1,20 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-
 body {
   font-family: 'Bai Jamjuree', sans-serif;
   color: hsl(201, 11%, 66%); 
   background-color: #ffffff;
-  background-image: url(/img/Bitmap.png);
+  background-image: url(/img/fundopreto.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100% 363px;
-  
   text-align: center;
 }
-ain {
+
+main {
   max-width: 1120px;
   margin: 0 auto;
   padding-top: 128px;
@@ -24,16 +22,13 @@ ain {
   padding-right: 24px;
 }
 
-
 .logo-container {
   margin-bottom: 56px;
 }
 
-
 .logo-container img {
   width: 125px;
 }
-
 
 .title {
   color: hsl(210, 10%, 33%); 
@@ -43,14 +38,12 @@ ain {
   margin-bottom: 16px;
 }
 
-
 .description {
   font-size: 18px;
   line-height: 150%;
   max-width: 730px;
   margin: 0 auto 48px auto; 
 }
-
 
 .btn {
   display: inline-block;
@@ -63,31 +56,41 @@ ain {
   font-weight: 600;
   color: #ffffff;
   text-align: center;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease, filter 0.3s ease;
 }
 
+.btn:hover {
+  transform: translateY(-6px);
+  filter: brightness(1.05);
+}
 
-
+.btn:active {
+  transform: translateY(-2px);
+}
 
 .btn-ios {
   background-color: hsl(171, 66%, 44%);
+  box-shadow: 0 4px 12px hsla(171, 66%, 44%, 0.3);
 }
 
-
-
+.btn-ios:hover {
+  box-shadow: 0 10px 20px hsla(171, 66%, 44%, 0.45);
+}
 
 .btn-mac {
   background-color: hsl(233, 100%, 69%);
+  box-shadow: 0 4px 12px hsla(233, 100%, 69%, 0.3);
 }
 
+.btn-mac:hover {
+  box-shadow: 0 10px 20px hsla(233, 100%, 69%, 0.45);
+}
 
 .ferramenta {
   max-width: 1120px;
   margin: 0 auto;
   padding: 80px 24px;
 }
-
-
-
 
 .ferramenta-content {
   display: flex;
@@ -97,9 +100,6 @@ ain {
   gap: 80px;
 }
 
-
-
-
 .ferramenta-image {
   margin-left: 0; 
   flex: 1;
@@ -107,19 +107,17 @@ ain {
   justify-content: center;
 }
 
-
 .ferramenta-image img {
   max-width: 100%;
   height: auto;
 }
-
 
 .ferramenta-list {
   flex: 1;
   text-align: left;
 }
 
-  .main-container {
+.main-container {
   max-width: 1120px;
   margin: 0 auto;
   padding-top: 128px;
@@ -241,18 +239,17 @@ ain {
   transform: scale(1.1);
 }
 
-  .ferramenta-list {
-    text-align: center;
-  }
-
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-links {
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
+.ferramenta-list {
+  text-align: center;
 }
 
+.footer-container {
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-links {
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
